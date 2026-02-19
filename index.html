@@ -1,150 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Self-Refinement of Social Behaviors through VLM-based Replanning">
+  <meta name="keywords" content="Robotics, VLM, Social Navigation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>The Robot's Inner Critic (Official Project Page)</title>
-  <meta name="title" content="The Robot's Inner Critic: Self-Refinement of Social Behaviors through VLM-based Replanning">
-  <meta name="description" content="Research on self-refinement of social robot behaviors using Vision-Language Models (VLM).">
-  <meta name="keywords" content="Robotics, VLM, Social Navigation, Reinforcement Learning, Imitation Learning">
-  <meta name="author" content="Jiyu Lim, Youngwoo Yoon, Kwanghyun Park">
+  <title>The Robot's Inner Critic</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <link rel="stylesheet" href="./static/css/index.css">
 
   <style>
-    body {
-      font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
-    }
-    /* 제목 스타일 커스텀 */
+    /* 지유님이 요청하신 제목 스타일 커스텀 */
     .publication-title {
-      font-family: 'Montserrat', sans-serif !important;
+      font-family: 'Google Sans', sans-serif;
+    }
+    .title-main {
       font-weight: 800 !important;
-    }
-    .main-title {
-      font-size: 3.5rem !important; /* "The Robot's Inner Critic:" 크고 굵게 */
+      font-size: 3.5rem !important;
       display: block;
-      margin-bottom: 10px;
-      color: #2563eb; /* 포인트 컬러 */
+      margin-bottom: 0.5rem;
     }
-    .sub-title {
-      font-size: 2.2rem !important; /* 뒷부분은 살짝 작게 */
+    .title-sub {
       font-weight: 400 !important;
+      font-size: 2.2rem !important;
       display: block;
-      line-height: 1.2;
-    }
-    .author-block a {
-      color: #1a73e8;
-      font-weight: 600;
-    }
-    .institution-block {
-        margin-top: 10px;
-        color: #5f6368;
+      line-height: 1.1;
     }
   </style>
 </head>
 <body>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            
-            <h1 class="title is-1 publication-title">
-              <span class="main-title">The Robot's Inner Critic:</span>
-              <span class="sub-title">Self-Refinement of Social Behaviors through VLM-based Replanning</span>
-            </h1>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          
+          <h1 class="title is-1 publication-title">
+            <span class="title-main">The Robot's Inner Critic:</span>
+            <span class="title-sub">Self-Refinement of Social Behaviors through VLM-based Replanning</span>
+          </h1>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="#">Jiyu Lim</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="#">Youngwoo Yoon</a><sup>2*</sup>,</span>
-              <span class="author-block">
-                <a href="#">Kwanghyun Park</a><sup>1*</sup>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Jiyu Lim</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Youngwoo Yoon</a><sup>2*</sup>,</span>
+            <span class="author-block">
+              <a href="#">Kwanghyun Park</a><sup>1*</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>KwangWoon University, Republic of Korea,</span>
+            <span class="author-block"><sup>2</sup>ETRI, Republic of Korea</span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Corresponding Author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
               </span>
             </div>
-
-            <div class="is-size-5 publication-authors institution-block">
-              <span class="author-block"><sup>1</sup>KwangWoon University, Republic of Korea</span><br>
-              <span class="author-block"><sup>2</sup>ETRI, Republic of Korea</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding Author</small></span>
-            </div>
-
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <span class="link-block">
-                  <a href="#" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="#" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fab fa-github"></i></span>
-                    <span>Code</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="#" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="ai ai-arxiv"></i></span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
-              </div>
-            </div>
-
           </div>
+
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <div style="background: #f5f5f5; height: 400px; display: flex; align-items: center; justify-content: center; border-radius: 20px;">
-            <p><strong>[여기에 연구 대표 영상(Teaser Video)을 넣어보세요!]</strong></p>
-        </div>
-        <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
-          Our model allows the robot to critique its own social behaviors and replan paths using VLMs.
-        </h2>
-      </div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        요약 문구
+      </h2>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{lim2026innercritic,
-  title={The Robot's Inner Critic: Self-Refinement of Social Behaviors through VLM-based Replanning},
-  author={Lim, Jiyu and Yoon, Youngwoo and Park, Kwanghyun},
-  journal={arXiv preprint},
-  year={2026}
-}</code></pre>
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> 
+        which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+      </p>
+      <p>
+        Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+      </p>
     </div>
-  </section>
-
-  <footer class="footer">
-      <div class="container">
-        <div class="content has-text-centered">
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> 
-            which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. <br>
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer.
-          </p>
-          <p>
-            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-        </div>
-      </div>
-    </footer>
+  </div>
+</footer>
 
 </body>
 </html>
