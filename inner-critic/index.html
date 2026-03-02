@@ -103,6 +103,22 @@
             Conventional robot social behavior generation has been limited in flexibility and autonomy, relying on predefined motions or human feedback. This study proposes CRISP (Critique-and-Replan for Interactive Social Presence), an autonomous framework where a robot critiques and replans its own actions by leveraging a Vision-Language Model (VLM) as a `human-like social critic.' CRISP integrates (1) extraction of movable joints and constraints by analyzing the robot's description file (e.g., MJCF), (2) generation of step-by-step behavior plans based on situational context, (3) generation of low-level joint control code by referencing visual information (joint range-of-motion visualizations), (4) VLM-based evaluation of social appropriateness and naturalness, including pinpointing erroneous steps, and (5) iterative refinement of behaviors through reward-based search. This approach is not tied to a specific robot API; it can generate subtly different, human-like motions on various platforms using only the robot's structure file. In a user study involving five different robot types and 20 scenarios, including mobile manipulators and humanoids, our proposed method achieved significantly higher preference and situational appropriateness ratings compared to previous methods. This research presents a general framework that minimizes human intervention while expanding the robot's autonomous interaction capabilities and cross-platform applicability.
           </p>
         </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <hr> <h2 class="title is-3">CRISP Framework Overview</h2>
+        
+        <div class="publication-image" style="margin-top: 2rem; margin-bottom: 2rem;">
+          <object data="assets/overview_new.pdf" type="application/pdf" width="100%" height="500px">
+            <p>Your browser does not support PDFs. 
+              <a href="assets/CRISP_overview.pdf">Download the PDF</a> to view it.
+            </p>
+          </object>
+        </div>
+
+    <div class="content has-text-justified" style="color: #4a4a4a; line-height: 1.6;">
+      <p>
+        <strong>CRISP</strong> is an autonomous framework that leverages a Vision-Language Model (VLM) as a "social critic" to evaluate and refine robot behaviors. It enables robots to generate naturally social and platform-agnostic motions through an iterative self-refinement loop.
+      </p>
       </div>
     </div>
   </div>
