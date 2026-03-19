@@ -49,7 +49,7 @@
         <div class="publication-links field is-grouped is-grouped-centered">
           
           <p class="control">
-            <a href="TheRobot'sInnerCritic_JYL.pdf" target="_blank" class="button is-dark is-rounded">
+            <a href="assets/ICRA_final.pdf" target="_blank" class="button is-dark is-rounded">
               <span class="icon"><i class="fas fa-file-pdf"></i></span>
               <span>Paper</span>
             </a>
@@ -103,6 +103,53 @@
             Conventional robot social behavior generation has been limited in flexibility and autonomy, relying on predefined motions or human feedback. This study proposes CRISP (Critique-and-Replan for Interactive Social Presence), an autonomous framework where a robot critiques and replans its own actions by leveraging a Vision-Language Model (VLM) as a `human-like social critic.' CRISP integrates (1) extraction of movable joints and constraints by analyzing the robot's description file (e.g., MJCF), (2) generation of step-by-step behavior plans based on situational context, (3) generation of low-level joint control code by referencing visual information (joint range-of-motion visualizations), (4) VLM-based evaluation of social appropriateness and naturalness, including pinpointing erroneous steps, and (5) iterative refinement of behaviors through reward-based search. This approach is not tied to a specific robot API; it can generate subtly different, human-like motions on various platforms using only the robot's structure file. In a user study involving five different robot types and 20 scenarios, including mobile manipulators and humanoids, our proposed method achieved significantly higher preference and situational appropriateness ratings compared to previous methods. This research presents a general framework that minimizes human intervention while expanding the robot's autonomous interaction capabilities and cross-platform applicability.
           </p>
         </div>
+
+        <section class="section" style="background-color: #ffffff;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Key Contributions</h2>
+        <div class="columns is-multiline">
+          
+          <div class="column is-4">
+            <div class="card contribution-card">
+              <div class="card-content">
+                <p class="title is-5" style="color: #1a73e8;">🧠 VLM-based Self-Refinement</p>
+                <p class="subtitle is-6 has-text-justified" style="font-size: 0.95rem;">
+                  Utilizes a VLM as a <b>"human-like social critic"</b> to autonomously evaluate and refine behaviors through an iterative loop.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="card contribution-card">
+              <div class="card-content">
+                <p class="title is-5" style="color: #1a73e8;">⚙️ Low-level Motion Control</p>
+                <p class="subtitle is-6 has-text-justified" style="font-size: 0.95rem;">
+                  Generates <b>time-series joint values</b> directly from MJCF files, enabling flexible social motions beyond rigid APIs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="card contribution-card">
+              <div class="card-content">
+                <p class="title is-5" style="color: #1a73e8;">🤖 Robot-Agnostic Utility</p>
+                <p class="subtitle is-6 has-text-justified" style="font-size: 0.95rem;">
+                  Validated across <b>20 scenarios on five distinct platforms</b>, demonstrating broad cross-platform applicability.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <hr> <h2 class="title is-3">CRISP Framework Overview</h2>
