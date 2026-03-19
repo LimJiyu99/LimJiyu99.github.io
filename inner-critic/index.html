@@ -104,48 +104,50 @@
           </p>
         </div>
 
-        <section class="section" style="background-color: #ffffff; padding: 4rem 0;">
+        <section class="section" style="background-color: #ffffff; padding: 5rem 0;">
           <div class="container is-max-desktop">
-            <div class="columns is-centered has-text-centered">
-              <div class="column is-four-fifths">
-                <h2 class="title is-3" style="margin-bottom: 3rem;">Key Contributions</h2>
+            <div class="columns is-centered">
+              <div class="column is-nine-tenths">
+                <h2 class="title is-3 has-text-centered" style="margin-bottom: 4rem; letter-spacing: -0.5px;">Key Contributions</h2>
                 
-                <div class="columns is-multiline">
-                  
-                  <div class="column is-4">
-                    <div class="card contribution-card">
-                      <div class="card-content">
-                        <p class="title is-5" style="color: #1a73e8; margin-bottom: 1rem;">🧠 VLM-based Self-Refinement</p>
-                        <p class="subtitle is-6 has-text-justified" style="font-size: 0.98rem; line-height: 1.6;">
-                          We propose an autonomous cycle where a VLM functions as a <b>"human-like social critic."</b> The robot self-assesses and refines behaviors without costly human-in-the-loop feedback.
-                        </p>
-                      </div>
+                <div class="content">
+                  <div class="columns is-vcentered" style="margin-bottom: 3rem;">
+                    <div class="column is-1 has-text-centered">
+                      <span style="font-size: 2.5rem;">🧠</span>
+                    </div>
+                    <div class="column">
+                      <h4 class="title is-5" style="margin-bottom: 0.5rem; color: #1a73e8;">VLM-based Self-Refinement</h4>
+                      <p style="color: #4a4a4a; font-size: 1.05rem; line-height: 1.6;">
+                        Introduces an autonomous <strong>"generate-evaluate-regenerate"</strong> cycle where a VLM serves as a human-like social critic[cite: 4, 68]. This allows the robot to refine its social behaviors without explicit human-in-the-loop feedback[cite: 69].
+                      </p>
                     </div>
                   </div>
         
-                  <div class="column is-4">
-                    <div class="card contribution-card">
-                      <div class="card-content">
-                        <p class="title is-5" style="color: #1a73e8; margin-bottom: 1rem;">⚙️ MJCF-based Motion Control</p>
-                        <p class="subtitle is-6 has-text-justified" style="font-size: 0.98rem; line-height: 1.6;">
-                          CRISP generates direct <b>time-series joint value control code</b> by parsing robot structural files (e.g., MJCF), bypassing the need for fixed, pre-defined behavior APIs.
-                        </p>
-                      </div>
+                  <div class="columns is-vcentered" style="margin-bottom: 3rem;">
+                    <div class="column is-1 has-text-centered">
+                      <span style="font-size: 2.5rem;">⚙️</span>
+                    </div>
+                    <div class="column">
+                      <h4 class="title is-5" style="margin-bottom: 0.5rem; color: #1a73e8;">MJCF-based Low-level Control</h4>
+                      <p style="color: #4a4a4a; font-size: 1.05rem; line-height: 1.6;">
+                        Bypasses rigid behavior APIs by generating <strong>direct time-series joint values</strong> from robot structural files (MJCF)[cite: 52, 71]. This enables the production of subtly varied and natural motions[cite: 7, 72].
+                      </p>
                     </div>
                   </div>
         
-                  <div class="column is-4">
-                    <div class="card contribution-card">
-                      <div class="card-content">
-                        <p class="title is-5" style="color: #1a73e8; margin-bottom: 1rem;">🤖 Robot-Agnostic Usability</p>
-                        <p class="subtitle is-6 has-text-justified" style="font-size: 0.98rem; line-height: 1.6;">
-                          The generalizable framework was validated across <b>20 scenarios using five distinct robot platforms</b>, including humanoids, mobile manipulators, and multi-joint arms.
-                        </p>
-                      </div>
+                  <div class="columns is-vcentered">
+                    <div class="column is-1 has-text-centered">
+                      <span style="font-size: 2.5rem;">🤖</span>
+                    </div>
+                    <div class="column">
+                      <h4 class="title is-5" style="margin-bottom: 0.5rem; color: #1a73e8;">Robot-Agnostic Generalization</h4>
+                      <p style="color: #4a4a4a; font-size: 1.05rem; line-height: 1.6;">
+                        Validated across <strong>20 interaction scenarios on five distinct robot platforms</strong>, including the Unitree G1 humanoid and TIAGo mobile manipulator[cite: 8, 73, 221]. Demonstrated significant improvements in user preference over state-of-the-art baselines[cite: 8, 74].
+                      </p>
                     </div>
                   </div>
-        
                 </div>
+        
               </div>
             </div>
           </div>
